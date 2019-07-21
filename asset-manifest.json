@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.d0c95261.chunk.css",
-    "main.js": "/React-Portfolio/static/js/main.b817f238.chunk.js",
-    "main.js.map": "/React-Portfolio/static/js/main.b817f238.chunk.js.map",
-    "runtime~main.js": "/React-Portfolio/static/js/runtime~main.982e8b01.js",
-    "runtime~main.js.map": "/React-Portfolio/static/js/runtime~main.982e8b01.js.map",
-    "static/js/2.c6340d08.chunk.js": "/React-Portfolio/static/js/2.c6340d08.chunk.js",
-    "static/js/2.c6340d08.chunk.js.map": "/React-Portfolio/static/js/2.c6340d08.chunk.js.map",
-    "index.html": "/React-Portfolio/index.html",
-    "precache-manifest.a5536aada6f1043f091f49573e4d49d2.js": "/React-Portfolio/precache-manifest.a5536aada6f1043f091f49573e4d49d2.js",
-    "service-worker.js": "/React-Portfolio/service-worker.js",
-    "static/css/main.d0c95261.chunk.css.map": "/React-Portfolio/static/css/main.d0c95261.chunk.css.map",
-    "static/media/intelex.png": "/React-Portfolio/static/media/intelex.e4161b14.png",
-    "static/media/kermit.png": "/React-Portfolio/static/media/kermit.18bbc395.png"
+    "main.css": "/me/static/css/main.d0c95261.chunk.css",
+    "main.js": "/me/static/js/main.26b0b044.chunk.js",
+    "main.js.map": "/me/static/js/main.26b0b044.chunk.js.map",
+    "runtime~main.js": "/me/static/js/runtime~main.7f73a39c.js",
+    "runtime~main.js.map": "/me/static/js/runtime~main.7f73a39c.js.map",
+    "static/js/2.c6340d08.chunk.js": "/me/static/js/2.c6340d08.chunk.js",
+    "static/js/2.c6340d08.chunk.js.map": "/me/static/js/2.c6340d08.chunk.js.map",
+    "index.html": "/me/index.html",
+    "precache-manifest.3c19112bdb06f1c5a36b051a671da70b.js": "/me/precache-manifest.3c19112bdb06f1c5a36b051a671da70b.js",
+    "service-worker.js": "/me/service-worker.js",
+    "static/css/main.d0c95261.chunk.css.map": "/me/static/css/main.d0c95261.chunk.css.map",
+    "static/media/intelex.png": "/me/static/media/intelex.e4161b14.png",
+    "static/media/kermit.png": "/me/static/media/kermit.18bbc395.png"
   }
 }
