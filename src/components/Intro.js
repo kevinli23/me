@@ -6,14 +6,13 @@ const useStyles = makeStyles({
     root: {
         flexGrow: 1,
     },
-    image:{
+    image: {
         width: '300px',
         height: '300px',
         borderRadius: '50%',
         border: '2px solid black',
-        marginBottom: '2vh',
-    }, 
-    intro:{
+    },
+    intro: {
         fontFamily: 'PT Sans Narrow, sans-serif',
         fontSize: '20px',
     },
@@ -25,12 +24,12 @@ const useStyles = makeStyles({
 const Intro = () => {
     const classes = useStyles();
 
-    return(
+    return (
         <div className={classes.intro}>
             <img className={classes.image} src={me} alt="Avatar" />
             <div>
-                <h2>Hi! My name's <b>Kevin Li</b></h2>
-                <h3 className={classes.subtitle}>Computer Science Student @ UWaterloo</h3>
+                <h1>Hi! My name's <b>Kevin Li</b></h1>
+                <h2 className={classes.subtitle}>Computer Science Student @ UWaterloo</h2>
             </div>
         </div>
     );

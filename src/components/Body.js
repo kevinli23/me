@@ -2,34 +2,39 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import About from './About';
 import Intro from './Intro';
-import Paper from '@material-ui/core/Paper';
+import Experience from './Experience';
 import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+    overflow: 'hidden',
   },
   paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  },
+  paperz: {
     maxWidth: 400,
     margin: `${theme.spacing(1)}px auto`,
     padding: theme.spacing(2),
-  },
+  }
 }));
 
-export default function AutoGrid() {
+export default function Body() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={3}>
-        <Grid item xs />
-        <Grid item xs={6}>
-            <Intro />
-            <Typography noWrap>Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem
-            LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem</Typography>
+      <Grid container wrap="nowrap" spacing={2}>
+        <Grid item xs={3} />
+        <Grid item xs={6} wrap="nowrap">
+          <Intro />
+          <About />
+          <Experience />
         </Grid>
-        <Grid item xs />
+        <Grid item xs={3} />
       </Grid>
     </div>
   );
