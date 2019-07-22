@@ -1,5 +1,7 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, Box } from '@material-ui/core';
+import Card from './Card';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const useStyles = makeStyles({
     projectspage: {
@@ -12,17 +14,28 @@ const useStyles = makeStyles({
     image: {
         width: '70px',
         height: '70px',
+    },
+    projectcards: {
+        marginTop: '3vh'
     }
 });
 
 const Projects = () => {
     const classes = useStyles();
+    const small = useMediaQuery('(max-width:1160px)');
 
     return (
         <div className={`projects ${classes.projectspage}`}>
             <h2>Projects</h2>
             <hr />
-
+            <Box justifyContent={(small) ? 'center' : 'space-between'} display="flex" flexWrap="wrap" className={classes.projectcards}>
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+            </Box>
         </div>
     );
 }

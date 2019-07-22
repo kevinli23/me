@@ -36,17 +36,17 @@ const useStyles = makeStyles({
     bullet: {
         margin: '0px',
         marginTop: '10px',
-        fontSize: '15px',
+        fontSize: '17px',
         marginLeft: '15px',
     },
     course: {
-        width: '100px',
+        minWidth: '110px',
         margin: '0px',
-        fontSize: '0.9em',
+        fontSize: '1.1em',
         marginTop: '10px',
     },
     courseName: {
-        fontSize: '0.9em',
+        fontSize: '1.1em',
         margin: '0px',
         marginTop: '10px'
     }
@@ -86,12 +86,12 @@ const Education = () => {
                     <h4 className={classes.subtitle}>
                         Scholarships:
                     </h4>
-                    <h6 className={classes.bullet}>
+                    <p className={classes.bullet}>
                         • B.P. Dammizio Scholarship
-                    </h6>
-                    <h6 className={classes.bullet}>
+                    </p>
+                    <p className={classes.bullet}>
                         • President's Scholar/Distinction
-                    </h6>
+                    </p>
                     <h4 className={classes.subtitle}>
                         Relevant Courses: 
                     </h4>
@@ -99,9 +99,9 @@ const Education = () => {
                         Courses.map(item => {
                             return(
                                 <div>
-                                    <h5>
+                                    <h4>
                                         {item.year}
-                                    </h5>
+                                    </h4>
                                     {listCourses(item.arr, classes)}
                                 </div>
                             );

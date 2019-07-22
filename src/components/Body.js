@@ -7,6 +7,7 @@ import Education from './Education';
 import Projects from './Projects';
 import Footer from './Footer';
 import Grid from '@material-ui/core/Grid';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -27,12 +28,16 @@ const useStyles = makeStyles(theme => ({
 
 export default function Body() {
   const classes = useStyles();
+  const small = useMediaQuery('(max-width:600px)');
+
+  var sides = (small)? 1 : 2;
+  var content = (small)? 10 : 8;
 
   return (
     <div className={classes.root}>
       <Grid container wrap="nowrap" spacing={2}>
-        <Grid item xs={2} />
-        <Grid item xs={8} wrap="nowrap">
+        <Grid item xs={sides} />
+        <Grid item xs={content} wrap="nowrap">
           <Intro />
           <About />
           <Experience />
@@ -40,7 +45,7 @@ export default function Body() {
           <Education />
           <Footer />
         </Grid>
-        <Grid item xs={2} />
+        <Grid item xs={sides} />
       </Grid>
     </div>
   );

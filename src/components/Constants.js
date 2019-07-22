@@ -8,9 +8,12 @@ const Courses18 = [
 ];
 
 const Courses19 = [
-    {code: 'CS 246', name: "Object-Oriented Software Development"},
+    {code: 'CS 240', name: "Data Structures and Data Management"},
+    {code: 'CS 241', name: "Foundations of Sequential Programs"},
     {code: 'CS 245', name: "Logic and Computation"},
+    {code: 'CS 246', name: "Object-Oriented Software Development"},
     {code: 'CS 251', name: "Computer Organization and Design"},
+    {code: 'MATH 239', name: "Introduction to Combinatorics"},
     {code: 'STAT 230', name: "Probability"}
 ];
 
