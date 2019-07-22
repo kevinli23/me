@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core';
 import uwlogo from '../res/uw.png';
-import { Courses18, Courses19 } from './Constants';
+import { Courses } from './Constants';
 import { Box } from '@material-ui/core';
 
 const useStyles = makeStyles({
@@ -11,9 +11,12 @@ const useStyles = makeStyles({
         paddingTop: '2vh',
         textAlign: 'left',
     },
+    box:{
+        marginTop: '20px',
+    },
     logo: {
-        width: '60px',
-        height: '60px',
+        width: '70px',
+        height: '70px',
         marginRight: '15px',
     },
     title: {
@@ -23,10 +26,12 @@ const useStyles = makeStyles({
     subtitle: {
         margin: '0px',
         marginTop: '20px',
+        fontSize: '22px'
     },
     description: {
         marginTop: '1px',
         marginBottom: '15px',
+        fontSize: '15px'
     },
     bullet: {
         margin: '0px',
@@ -69,7 +74,7 @@ const Education = () => {
         <div className={`education ${classes.educationpage}`}>
             <h2>Education</h2>
             <hr />
-            <Box display="flex" flexDirection="row">
+            <Box display="flex" flexDirection="row" className={classes.box}>
                 <img className={classes.logo} src={uwlogo} />
                 <div>
                     <h3 className={classes.title}>
@@ -90,14 +95,18 @@ const Education = () => {
                     <h4 className={classes.subtitle}>
                         Relevant Courses: 
                     </h4>
-                    <h5>
-                        2019
-                    </h5>
-                    {listCourses(Courses19, classes)}
-                    <h5>
-                        2018
-                    </h5>
-                    {listCourses(Courses18, classes)}
+                    {
+                        Courses.map(item => {
+                            return(
+                                <div>
+                                    <h5>
+                                        {item.year}
+                                    </h5>
+                                    {listCourses(item.arr, classes)}
+                                </div>
+                            );
+                        })
+                    }
                 </div>
             </Box>
         </div>

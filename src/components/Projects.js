@@ -20,7 +20,7 @@ const Projects = () => {
 
     return (
         <div className={`projects ${classes.projectspage}`}>
-            <h2>Experience</h2>
+            <h2>Projects</h2>
             <hr />
 
         </div>
