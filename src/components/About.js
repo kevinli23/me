@@ -1,8 +1,9 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core';
-import { faJava, faPython, faJs, faHtml5, faCss3, faReact, faBootstrap, faLinux, faGit, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { makeStyles, Box } from '@material-ui/core';
+import { faJava, faPython, faJs, faHtml5, faCss3, faReact, faBootstrap, faLinux, faGit, faGithub, faNode } from "@fortawesome/free-brands-svg-icons";
 import { faTensorflow, faCpp, faCsharp, faMongo} from './Icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const useStyles = makeStyles({
     aboutpage: {
@@ -24,10 +25,12 @@ const useStyles = makeStyles({
     }
 });
 
-const icons = [faJava, faPython, faJs, faReact, faHtml5, faCss3, faBootstrap, faLinux, faGit, faGithub, faTensorflow, faCpp, faCsharp, faMongo];
+const icons = [faJava, faPython, faJs, faReact, faHtml5, faCss3, faBootstrap, faLinux, faGit, faGithub, faTensorflow, faCpp, faCsharp, faMongo, faNode];
 
 const About = () => {
     const classes = useStyles();
+    const max1383 = useMediaQuery('(max-width:1383px)');
+
     return (
         <div className={`about ${classes.aboutpage}`}>
             <h2>About</h2>
@@ -45,12 +48,12 @@ const About = () => {
                 I am currently seeking an internship opportunity for the summer (May to August) of 2020 that involves Software Development or Machine Learning!
             </p>
             <h3>Languages | Tools | Frameworks that I am familar with:</h3>
-            <div className={classes.languages}>
+            <Box display="flex" justifyContent={(max1383) ? "initial" : "space-between"} flexWrap="wrap" className={classes.languages}>
                 {icons.map(name => {
                     return (<FontAwesomeIcon icon={name} size='2x' border fixedWidth />);
                 })
                 }
-            </div>
+            </Box>
         </div>
     );
 }
