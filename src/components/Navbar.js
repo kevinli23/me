@@ -23,7 +23,7 @@ const Navbar = () => {
   const classes = useStyles();
 
   return (
-    <Box display="flex" justifyContent="center" m={0} p={0} className={classes.appbar}>
+    <Box display="flex" alignItems="center" justifyContent="center" m={0} p={0} className={classes.appbar}>
       <Link
         activeClass="active"
         to="about"

@@ -100,7 +100,7 @@ const About = () => {
             <p>
                 I am currently looking for an internship opportunity for the summer (May to August) of 2020 that involves Software Development or Machine Learning!
             </p>
-            <h3>Languages | Tools | Frameworks that I am familar with!</h3>
+            <h3>Languages | Tools | Frameworks that I am familar with:</h3>
             <div className={classes.languages}>
                 {icons.map(name => {
                     return (<FontAwesomeIcon icon={name} size='3x' border fixedWidth />);

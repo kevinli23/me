@@ -7,8 +7,8 @@ const useStyles = makeStyles({
         flexGrow: 1,
     },
     image: {
-        width: '300px',
-        height: '300px',
+        width: '25vw',
+        height: '25vw',
         borderRadius: '50%',
         border: '2px solid black',
     },

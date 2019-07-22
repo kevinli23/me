@@ -28,13 +28,13 @@ export default function Body() {
   return (
     <div className={classes.root}>
       <Grid container wrap="nowrap" spacing={2}>
-        <Grid item xs={3} />
-        <Grid item xs={6} wrap="nowrap">
+        <Grid item xs={2} />
+        <Grid item xs={8} wrap="nowrap">
           <Intro />
           <About />
           <Experience />
         </Grid>
-        <Grid item xs={3} />
+        <Grid item xs={2} />
       </Grid>
     </div>
   );
