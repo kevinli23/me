@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import About from './About';
 import Intro from './Intro';
 import Experience from './Experience';
+import Education from './Education';
 import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles(theme => ({
@@ -33,6 +34,7 @@ export default function Body() {
           <Intro />
           <About />
           <Experience />
+          <Education />
         </Grid>
         <Grid item xs={2} />
       </Grid>

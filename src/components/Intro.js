@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import me from '../res/kermit.png'
+import me from '../res/me.jfif'
 
 const useStyles = makeStyles({
     root: {
@@ -11,6 +11,7 @@ const useStyles = makeStyles({
         height: '25vw',
         borderRadius: '50%',
         border: '2px solid black',
+        marginTop: '9vh',
     },
     intro: {
         fontFamily: 'PT Sans Narrow, sans-serif',

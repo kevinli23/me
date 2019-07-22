@@ -23,6 +23,27 @@ const Experience = () => {
         <div className={`experience ${classes.experiencepage}`}>
             <h2>Experience</h2>
             <hr />
+            <h2>Experience</h2>
+            <h2>Experience</h2>
+            <h2>Experience</h2>
+            <h2>Experience</h2>
+            <h2>Experience</h2>
+            <h2>Experience</h2>
+            <h2>Experience</h2>
+            <h2>Experience</h2>
+            <h2>Experience</h2>
+            <h2>Experience</h2>
+            <h2>Experience</h2>
+            <h2>Experience</h2>
+            <h2>Experience</h2>
+            <h2>Experience</h2>
+            <h2>Experience</h2>
+            <h2>Experience</h2>
+            <h2>Experience</h2>
+            <h2>Experience</h2>
+            <h2>Experience</h2>
+            <h2>Experience</h2>
+            <h2>Experience</h2>
 
         </div>
     );

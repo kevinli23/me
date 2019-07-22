@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core';
 import Box from '@material-ui/core/Box';
 import { Link, animateScroll as scroll } from "react-scroll";
+import '../css/Navbar.css';
 
 const useStyles = makeStyles({
   root: {
@@ -10,9 +11,9 @@ const useStyles = makeStyles({
   appbar: {
     color: 'white',
     backgroundColor: 'black',
-    height: '5vh',
-    marginBottom: '5vh',
+    height: '4.5vh',
     fontFamily: "Roboto Mono, monospace",
+    minWidth: '100vw',
   },
   items: {
     padding: '8px',
@@ -23,15 +24,15 @@ const Navbar = () => {
   const classes = useStyles();
 
   return (
-    <Box display="flex" alignItems="center" justifyContent="center" m={0} p={0} className={classes.appbar}>
+    <Box position="fixed" display="flex" alignItems="center" justifyContent="center" m={0} p={0} className={classes.appbar}>
       <Link
         activeClass="active"
         to="about"
         spy={true}
         smooth={true}
-        offset={-70}
+        offset={-10}
         duration={1000}
-        className={classes.items}
+        className={`${classes.items} menu-button`}
       >
         About
       </Link>
@@ -41,21 +42,21 @@ const Navbar = () => {
         to="experience"
         spy={true}
         smooth={true}
-        offset={-70}
+        offset={-10}
         duration={1000}
-        className={classes.items}
+        className={`${classes.items} menu-button`}
       >
         Experience
-              </Link>
+      </Link>
 
       <Link
         activeClass="active"
         to="projects"
         spy={true}
         smooth={true}
-        offset={-70}
+        offset={-10}
         duration={1000}
-        className={classes.items}
+        className={`${classes.items} menu-button`}
       >
         Projects
               </Link>
@@ -65,9 +66,9 @@ const Navbar = () => {
         to="education"
         spy={true}
         smooth={true}
-        offset={-70}
+        offset={-10}
         duration={1000}
-        className={classes.items}
+        className={`${classes.items} menu-button`}
       >
         Education
               </Link>
