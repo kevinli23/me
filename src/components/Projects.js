@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles, Box } from '@material-ui/core';
 import Card from './Card';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { projectInformation } from './Constants';
 
 const useStyles = makeStyles({
     projectspage: {
@@ -29,42 +30,13 @@ const Projects = () => {
             <h2>Projects</h2>
             <hr />
             <Box justifyContent={(small) ? 'center' : 'space-between'} display="flex" flexWrap="wrap" className={classes.projectcards}>
-                <Card 
-                    image={"https://ih0.redbubble.net/image.373301418.1062/mp,650x642,gloss,f8f8f8,t-pad,750x1000,f8f8f8.jpg"}
-                    title={"Contemplative Reptile"}
-                    desc={`Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                    across all continents except Antarctica`}
-                    link={"http://pluspng.com/img-png/kermit-png-kermit-png-472.png"}/>
-                <Card 
-                    image={"https://ih0.redbubble.net/image.373301418.1062/mp,650x642,gloss,f8f8f8,t-pad,750x1000,f8f8f8.jpg"}
-                    title={"Contemplative Reptile"}
-                    desc={`Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                    across all continents except Antarctica`}
-                    link={"http://pluspng.com/img-png/kermit-png-kermit-png-472.png"}/>
-                <Card 
-                    image={"https://ih0.redbubble.net/image.373301418.1062/mp,650x642,gloss,f8f8f8,t-pad,750x1000,f8f8f8.jpg"}
-                    title={"Contemplative Reptile"}
-                    desc={`Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                    across all continents except Antarctica`}
-                    link={"http://pluspng.com/img-png/kermit-png-kermit-png-472.png"}/>
-                <Card 
-                    image={"https://ih0.redbubble.net/image.373301418.1062/mp,650x642,gloss,f8f8f8,t-pad,750x1000,f8f8f8.jpg"}
-                    title={"Contemplative Reptile"}
-                    desc={`Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                    across all continents except Antarctica`}
-                    link={"http://pluspng.com/img-png/kermit-png-kermit-png-472.png"}/>
-                <Card 
-                    image={"https://ih0.redbubble.net/image.373301418.1062/mp,650x642,gloss,f8f8f8,t-pad,750x1000,f8f8f8.jpg"}
-                    title={"Contemplative Reptile"}
-                    desc={`Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                    across all continents except Antarctica`}
-                    link={"http://pluspng.com/img-png/kermit-png-kermit-png-472.png"}/>
-                <Card 
-                    image={"https://ih0.redbubble.net/image.373301418.1062/mp,650x642,gloss,f8f8f8,t-pad,750x1000,f8f8f8.jpg"}
-                    title={"Contemplative Reptile"}
-                    desc={`Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                    across all continents except Antarctica`}
-                    link={"http://pluspng.com/img-png/kermit-png-kermit-png-472.png"}/>
+                {
+                    projectInformation.map(proj => {
+                        return(
+                            <Card image={proj.image} title={proj.name} desc={proj.description} link={proj.link} icons={proj.icons} />
+                        );
+                    })
+                }
             </Box>
         </div>
     );

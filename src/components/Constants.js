@@ -1,3 +1,10 @@
+import image1 from '../res/proj1.png';
+import image2 from '../res/proj2.png';
+import image3 from '../res/proj3.png';
+
+import { faJava, faPython, faJs, faHtml5, faCss3, faReact, faBootstrap, faLinux, faGit, faGithub, faNode, faChrome } from "@fortawesome/free-brands-svg-icons";
+import { faTensorflow, faCpp, faCsharp, faMongo} from './Icons';
+
 const Courses18 = [
     {code: 'MATH 135', name: "Algebra for Honours Mathematics"},
     {code: 'MATH 136', name: "Linear Algebra 1 for Honours Mathematics"},
@@ -33,4 +40,29 @@ export const aboutMeText = [
     `I am currently seeking an internship opportunity for the summer (May to August) of 2020 that involves Software Development or Machine Learning!`,
 
     `Languages | Tools | Frameworks that I am familar with:`
+];
+
+export const projectInformation = [
+    {
+        name: "Pengu's Dank Adventure", 
+        image: image1,
+        description: `Platformer game that was made using JFrame and Graphics2D for rendering and Thread based execution for updates.
+                      Also utilizes sockets for a Java backend that accepts simple login and message packets`,
+        link: 'https://github.com/kevinli23/Pengus-Dank-Adventure',
+        icons: [faJava]
+    },
+    {
+        name: "Dark Run", 
+        image: image2,
+        description: 'Puzzle Platformer made using Java',
+        link: 'https://github.com/kevinli23/Dark-Run',
+        icons: [faJava]
+    },
+    {
+        name: "Chronovise",
+        image: image3,
+        description: 'Chrome Extension to help you manage access to websites seperated by four different workspaces',
+        link: 'https://github.com/kevinli23/Chronovise-1.0',
+        icons: [faHtml5, faCss3, faJs, faBootstrap, faChrome]
+    }
 ]
