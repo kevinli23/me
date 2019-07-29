@@ -10,8 +10,10 @@ const useStyles = makeStyles({
     aboutpage: {
         flex: 1,
         alignItems: 'flex-start',
-        paddingTop: '2vh',
+        paddingTop: '6vh',
+        paddingBottom: '3vh',
         textAlign: 'left',
+        fontSize: '1.5em',
     },
     languages: {
         flex: 1,
@@ -30,7 +32,6 @@ const icons = [faJava, faPython, faJs, faReact, faHtml5, faCss3, faBootstrap, fa
 
 const About = () => {
     const classes = useStyles();
-    const max1383 = useMediaQuery('(max-width:1383px)');
 
     return (
         <div className={`about ${classes.aboutpage}`}>
@@ -46,7 +47,7 @@ const About = () => {
                 {aboutMeText[2]}
             </p>
             <h3>{aboutMeText[3]}</h3>
-            <Box display="flex" justifyContent={(max1383) ? "initial" : "space-between"} flexWrap="wrap" className={classes.languages}>
+            <Box display="flex" justifyContent="initial" flexWrap="wrap" className={classes.languages}>
                 {icons.map(name => {
                     return (<FontAwesomeIcon icon={name} size='2x' border fixedWidth />);
                 })}

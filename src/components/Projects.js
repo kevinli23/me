@@ -8,9 +8,11 @@ const useStyles = makeStyles({
     projectspage: {
         flex: 1,
         alignItems: 'flex-start',
-        paddingTop: '2vh',
+        paddingTop: '6vh',
+        paddingBottom: '3vh',
         textAlign: 'left',
         justifyContent: 'center',
+        height: 'inherit'
     },
     image: {
         width: '70px',

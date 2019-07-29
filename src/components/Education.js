@@ -8,7 +8,8 @@ const useStyles = makeStyles({
     educationpage: {
         flex: 1,
         alignItems: 'flex-start',
-        paddingTop: '2vh',
+        paddingTop: '6vh',
+        paddingBottom: '3vh',
         textAlign: 'left',
     },
     box:{
