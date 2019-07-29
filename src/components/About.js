@@ -4,6 +4,7 @@ import { faJava, faPython, faJs, faHtml5, faCss3, faReact, faBootstrap, faLinux,
 import { faTensorflow, faCpp, faCsharp, faMongo} from './Icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { aboutMeText } from './Constants'; 
 
 const useStyles = makeStyles({
     aboutpage: {
@@ -36,23 +37,19 @@ const About = () => {
             <h2>About</h2>
             <hr />
             <p>
-                Whomever is reading this, Hello! I'm currently a second year Computer Science Student at the University of Waterloo. I have been programming for about
-                three years and am actively learning new things daily! I am currently employed at Intelex Technologies Inc. where I work as a software developer. At the moment, I am
-                interested in Machine Learning (especially the mathematics that goes behind it!) as well as various other JavaScript libraries such as React and Node.
+                {aboutMeText[0]}
             </p>
             <p>
-                Aside from programming and learning, on my spare time I enjoy playing basketball (and keeping up with the NBA), watching cooking videos, following politics and
-                playing a bit of video games.
+                {aboutMeText[1]}
             </p>
             <p>
-                I am currently seeking an internship opportunity for the summer (May to August) of 2020 that involves Software Development or Machine Learning!
+                {aboutMeText[2]}
             </p>
-            <h3>Languages | Tools | Frameworks that I am familar with:</h3>
+            <h3>{aboutMeText[3]}</h3>
             <Box display="flex" justifyContent={(max1383) ? "initial" : "space-between"} flexWrap="wrap" className={classes.languages}>
                 {icons.map(name => {
                     return (<FontAwesomeIcon icon={name} size='2x' border fixedWidth />);
-                })
-                }
+                })}
             </Box>
         </div>
     );
