@@ -5,6 +5,24 @@ import image3 from '../res/proj3.png';
 import { faJava, faPython, faJs, faHtml5, faCss3, faReact, faBootstrap, faLinux, faGit, faGithub, faNode, faChrome } from "@fortawesome/free-brands-svg-icons";
 import { faTensorflow, faCpp, faCsharp, faMongo} from './Icons';
 
+export const iconColors = {
+    'java': "#5382a1",
+    'python': "#FFD43B",
+    'js': "#f0db4f",
+    'html5': "#e34f26",
+    'css3': "#0072bb",
+    'react': "#00d9ff",
+    'bootstrap': 'rgb(86, 62, 124)',
+    'linux': '#000000',
+    'git': 'rgb(246, 79, 41)',
+    'github': '#000000',
+    'Tensorflow': '#f6bd3a',
+    'C++': '#000000',
+    'C#': '#000000',
+    'Mongo': 'rgb(78, 169, 75)',
+    'node': 'rgb(102, 159, 100)',
+}
+
 const Courses18 = [
     {code: 'MATH 135', name: "Algebra for Honours Mathematics"},
     {code: 'MATH 136', name: "Linear Algebra 1 for Honours Mathematics"},

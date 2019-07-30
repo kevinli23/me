@@ -4,7 +4,7 @@ import { faJava, faPython, faJs, faHtml5, faCss3, faReact, faBootstrap, faLinux,
 import { faTensorflow, faCpp, faCsharp, faMongo} from './Icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { aboutMeText } from './Constants'; 
+import { aboutMeText, iconColors } from './Constants'; 
 
 const useStyles = makeStyles({
     aboutpage: {
@@ -28,7 +28,7 @@ const useStyles = makeStyles({
     }
 });
 
-const icons = [faJava, faPython, faJs, faReact, faHtml5, faCss3, faBootstrap, faLinux, faGit, faGithub, faTensorflow, faCpp, faCsharp, faMongo, faNode];
+const icons = [faJava, faPython, faGithub, faJs, faReact, faHtml5, faCss3, faBootstrap, faLinux, faGit, faTensorflow, faCsharp, faMongo, faCpp, faNode];
 
 const About = () => {
     const classes = useStyles();
@@ -49,7 +49,7 @@ const About = () => {
             <h3>{aboutMeText[3]}</h3>
             <Box display="flex" justifyContent="initial" flexWrap="wrap" className={classes.languages}>
                 {icons.map(name => {
-                    return (<FontAwesomeIcon icon={name} size='2x' border fixedWidth />);
+                    return (<FontAwesomeIcon title={name.iconName} color={iconColors[name.iconName]} icon={name} size='2x' border fixedWidth />);
                 })}
             </Box>
         </div>

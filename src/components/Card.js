@@ -13,13 +13,15 @@ const useStyles = makeStyles({
   card: {
     maxWidth: 300,
     margin: '20px',
-    boxShadow: 'none',
-    '&:hover:': {
-      boxShadow: '0px 1px 3px 0px rgba(0,0,0,0.2)'
+    boxShadow: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',
+    '&:hover': {
+      boxShadow: '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)',
     },
     maxHeight: '100%',
     flexDirection: 'column',
     display: 'flex',
+    textAlign: 'center',
+    alignItems: 'center'
   },
   media: {
     height: '300px',
@@ -27,6 +29,8 @@ const useStyles = makeStyles({
   },
   desc: {
     marginBottom: '20px',
+    marginLeft: '10px',
+    marginRight: '10px'
   },
   learnMore: {
     color: 'black',
@@ -40,7 +44,19 @@ const useStyles = makeStyles({
       backgroundColor: '#d8d8d8'
     },
     marginTop: 'auto',
+    marginBottom: '10px',
+    width: '80%',
+    float: 'center'
   },
+  title: {
+    marginTop: '10px',
+    marginBottom: '5px',
+    textAlign: 'center'
+  },
+  icontray: {
+    marginTop: '5px',
+    marginBottom: '15px',
+  }
 });
 
 const MyCard = ({image, title, desc, link, icons}) => {
@@ -49,9 +65,9 @@ const MyCard = ({image, title, desc, link, icons}) => {
     <div className={classes.card}>
           <img src={image} />
           <Typography gutterBottom variant="h5" component="h2">
-            {title}
+            <h4 className={classes.title}>{title}</h4>
           </Typography>
-          <Box justifyContent={"space-between"} display="flex" m={1}>
+          <Box className={classes.icontray} justifyContent={"space-between"} display="flex">
             {
               icons.map(name => {
                 return (<FontAwesomeIcon icon={name} size='2x' fixedWidth />);
