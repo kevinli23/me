@@ -14,7 +14,11 @@ const useStyles = makeStyles({
         width: '23vw',
         height: '23vw',
         borderRadius: '50%',
-        border: '2px solid black',
+        // border: '2px solid black',
+        boxShadow: '0 0 0 3px rgba(0, 0, 0, 0.12)',
+        '&:hover': {
+            boxShadow: '0 0 0 3px rgba(0, 0, 0, 0.35)',
+        },
         marginTop: '9vh',
     },
     intro: {

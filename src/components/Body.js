@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import About from './About';
 import Intro from './Intro';
-import Experience from './Experience';
+import Work from './Work';
 import Education from './Education';
 import Projects from './Projects';
 import Footer from './Footer';
@@ -40,7 +40,7 @@ export default function Body() {
         <Grid item xs={content} wrap="nowrap">
           <Intro />
           <About />
-          <Experience />
+          <Work />
           <Projects />
           <Education />
           <Footer />
