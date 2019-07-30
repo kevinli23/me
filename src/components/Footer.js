@@ -3,18 +3,21 @@ import { makeStyles, Box } from '@material-ui/core';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
+import '../css/logo.css';
+import logo from '../res/logo.svg';
 
 const useStyles = makeStyles({
     footer: {
         height: '5vh',
         marginTop: '2vh',
+        borderTop: '1px solid black',
     },
     icon: {
         color: 'black',
         '&:hover': {
             color: 'purple',
         },
-    }
+    },
 });
 
 const Footer = () => {
@@ -22,18 +25,10 @@ const Footer = () => {
 
     return(
         <Box display="flex" justifyContent='flex-end' alignItems="center" textAlign="left" className={classes.footer}>
-            <Box flexGrow={1}>
-                
+            <Box flexGrow={1} display="flex" alignItems="center">
+                Made with <img src={logo} className="App-logo" alt="logo" />
             </Box>
-            <a href="https://github.com/kevinli23">
-                <FontAwesomeIcon icon={faGithub} size='2x' fixedWidth className={classes.icon} />
-            </a>
-            <a href="https://www.linkedin.com/in/kevinli230/">
-                <FontAwesomeIcon icon={faLinkedin} size='2x' fixedWidth className={classes.icon} />
-            </a>
-            <a href="https://www.linkedin.com/in/kevinli230/">
-                <FontAwesomeIcon icon={faFile} size='2x' fixedWidth className={classes.icon} />
-            </a>
+            © Kevin Li 2019
         </Box>
     );
 }
