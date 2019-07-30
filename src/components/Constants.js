@@ -1,6 +1,7 @@
 import image1 from '../res/proj1.png';
 import image2 from '../res/proj2.png';
 import image3 from '../res/proj3.png';
+import image4 from '../res/me300.png';
 
 import { faJava, faPython, faJs, faHtml5, faCss3, faReact, faBootstrap, faLinux, faGit, faGithub, faNode, faChrome } from "@fortawesome/free-brands-svg-icons";
 import { faTensorflow, faCpp, faCsharp, faMongo} from './Icons';
@@ -83,5 +84,12 @@ export const projectInformation = [
         description: 'Chrome Extension to help you manage access to websites seperated by four different workspaces',
         link: 'https://github.com/kevinli23/Chronovise-1.0',
         icons: [faHtml5, faCss3, faJs, faBootstrap, faChrome]
+    },
+    {
+        name: "Portfolio Website",
+        image: image4,
+        description: 'A React based portfolio website that uses a mix of Material Design and creativity!',
+        link: 'https://github.com/kevinli23/me',
+        icons: [faReact, faCss3, faJs, faNode]
     }
 ]

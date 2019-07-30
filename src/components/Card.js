@@ -32,7 +32,8 @@ const useStyles = makeStyles({
     padding: '10px',
     borderRadius: '25px',
     border: '1px solid black',
-    height: '20px',
+    height: '13px',
+    lineHeight: '13px',
     textAlign: 'center',
     textDecoration: 'none',
     '&:hover': {
@@ -41,7 +42,6 @@ const useStyles = makeStyles({
     marginTop: 'auto',
     marginBottom: '10px',
     width: '80%',
-    float: 'center'
   },
   title: {
     marginTop: '10px',

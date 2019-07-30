@@ -13,7 +13,8 @@ const useStyles = makeStyles({
         paddingBottom: '3vh',
         textAlign: 'left',
         justifyContent: 'center',
-        height: 'inherit'
+        height: 'inherit',
+        fontSize: '1.5em',
     },
     image: {
         width: '70px',

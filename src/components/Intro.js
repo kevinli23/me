@@ -8,8 +8,8 @@ const useStyles = makeStyles({
         flexGrow: 1,
     },
     image: {
-        width: '25vw',
-        height: '25vw',
+        width: '23vw',
+        height: '23vw',
         borderRadius: '50%',
         border: '2px solid black',
         marginTop: '9vh',
@@ -20,6 +20,12 @@ const useStyles = makeStyles({
     },
     subtitle: {
         marginTop: '-20px',
+    },
+    name: {
+        fontWeight: 'bold',
+        color: '#add8e6',
+        fontSize: '2em',
+        marginBottom: '20px'
     }
 });
 
@@ -31,7 +37,7 @@ const Intro = () => {
             <div className={classes.intro}>
                 <img className={classes.image} src={me} alt="Avatar" />
                 <div>
-                    <h1>Hi! My name's <b>Kevin Li</b></h1>
+                    <h1><span className={classes.name}>Kevin Li</span></h1>
                     <h2 className={classes.subtitle}>Computer Science Student @ UWaterloo</h2>
                 </div>
             </div>
