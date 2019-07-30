@@ -3,6 +3,7 @@ import { makeStyles, Box } from '@material-ui/core';
 import Card from './Card';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { projectInformation } from './Constants';
+import Fade from 'react-reveal/Fade';
 
 const useStyles = makeStyles({
     projectspage: {
@@ -29,17 +30,19 @@ const Projects = () => {
 
     return (
         <div className={`projects ${classes.projectspage}`}>
-            <h2>Projects</h2>
-            <hr />
-            <Box justifyContent={(small) ? 'center' : 'space-between'} display="flex" flexWrap="wrap" className={classes.projectcards}>
-                {
-                    projectInformation.map(proj => {
-                        return(
-                            <Card image={proj.image} title={proj.name} desc={proj.description} link={proj.link} icons={proj.icons} />
-                        );
-                    })
-                }
-            </Box>
+            <Fade>
+                <h2>Projects</h2>
+                <hr />
+                <Box justifyContent={(small) ? 'center' : 'space-between'} display="flex" flexWrap="wrap" className={classes.projectcards}>
+                    {
+                        projectInformation.map(proj => {
+                            return(
+                                <Card image={proj.image} title={proj.name} desc={proj.description} link={proj.link} icons={proj.icons} />
+                            );
+                        })
+                    }
+                </Box>
+            </Fade>
         </div>
     );
 }

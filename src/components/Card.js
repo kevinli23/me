@@ -1,13 +1,8 @@
 import React from 'react';
 import { makeStyles, Box } from '@material-ui/core';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import { iconColors } from './Constants';
 
 const useStyles = makeStyles({
   card: {
@@ -70,18 +65,16 @@ const MyCard = ({image, title, desc, link, icons}) => {
           <Box className={classes.icontray} justifyContent={"space-between"} display="flex">
             {
               icons.map(name => {
-                return (<FontAwesomeIcon icon={name} size='2x' fixedWidth />);
+                return (<FontAwesomeIcon color={iconColors[name.iconName]} icon={name} size='2x' fixedWidth />);
               })
             }
           </Box>
           <Typography className={classes.desc} variant="body2" component="p">
             {desc}
           </Typography>
-          <div className={classes.learnMore}>
-            <a href={link} target="_blank">
-              Learn More
-            </a>
-          </div>
+          <a href={link} target="_blank" className={classes.learnMore}>
+                Learn More
+          </a>
     </div>
   );
 }

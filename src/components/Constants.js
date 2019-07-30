@@ -21,6 +21,7 @@ export const iconColors = {
     'C#': '#000000',
     'Mongo': 'rgb(78, 169, 75)',
     'node': 'rgb(102, 159, 100)',
+    'chrome': 'rgb(11, 164, 224)'
 }
 
 const Courses18 = [

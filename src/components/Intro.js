@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import me from '../res/me.jfif'
+import me from '../res/me.jfif';
+import Fade from 'react-reveal/Fade';
 
 const useStyles = makeStyles({
     root: {
@@ -26,13 +27,15 @@ const Intro = () => {
     const classes = useStyles();
 
     return (
-        <div className={classes.intro}>
-            <img className={classes.image} src={me} alt="Avatar" />
-            <div>
-                <h1>Hi! My name's <b>Kevin Li</b></h1>
-                <h2 className={classes.subtitle}>Computer Science Student @ UWaterloo</h2>
+        <Fade>
+            <div className={classes.intro}>
+                <img className={classes.image} src={me} alt="Avatar" />
+                <div>
+                    <h1>Hi! My name's <b>Kevin Li</b></h1>
+                    <h2 className={classes.subtitle}>Computer Science Student @ UWaterloo</h2>
+                </div>
             </div>
-        </div>
+        </Fade>
     );
 };
 

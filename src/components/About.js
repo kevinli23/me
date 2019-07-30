@@ -3,8 +3,8 @@ import { makeStyles, Box } from '@material-ui/core';
 import { faJava, faPython, faJs, faHtml5, faCss3, faReact, faBootstrap, faLinux, faGit, faGithub, faNode } from "@fortawesome/free-brands-svg-icons";
 import { faTensorflow, faCpp, faCsharp, faMongo} from './Icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { aboutMeText, iconColors } from './Constants'; 
+import { aboutMeText, iconColors } from './Constants';
+import Fade from 'react-reveal/Fade';
 
 const useStyles = makeStyles({
     aboutpage: {
@@ -18,13 +18,12 @@ const useStyles = makeStyles({
     languages: {
         flex: 1,
     },
-    iconImage: {
-        width: '5.15em',
-        height: '5em',
-        border: '0.3em solid #eee',
-        borderRadius: '0.1em 5%',
-        paddingTop: '0.04em',
-        paddingBottom: '0.11em'
+    icon: {
+        boxShadow: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',
+        border: 'solid 0.08em #FFF',
+        '&:hover': {
+            boxShadow: '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)',
+        },
     }
 });
 
@@ -35,23 +34,26 @@ const About = () => {
 
     return (
         <div className={`about ${classes.aboutpage}`}>
-            <h2>About</h2>
-            <hr />
-            <p>
-                {aboutMeText[0]}
-            </p>
-            <p>
-                {aboutMeText[1]}
-            </p>
-            <p>
-                {aboutMeText[2]}
-            </p>
-            <h3>{aboutMeText[3]}</h3>
-            <Box display="flex" justifyContent="initial" flexWrap="wrap" className={classes.languages}>
-                {icons.map(name => {
-                    return (<FontAwesomeIcon title={name.iconName} color={iconColors[name.iconName]} icon={name} size='2x' border fixedWidth />);
-                })}
-            </Box>
+            <Fade>
+                <h2>About</h2>
+                <hr />
+                <p>
+                    {aboutMeText[0]}
+                </p>
+                <p>
+                    {aboutMeText[1]}
+                </p>
+                <p>
+                    {aboutMeText[2]}
+                </p>
+                <h3>{aboutMeText[3]}</h3>
+                <Box display="flex" justifyContent="initial" flexWrap="wrap" className={classes.languages}>
+                    {icons.map(name => {
+                        return (<FontAwesomeIcon className={classes.icon} title={name.iconName} color={iconColors[name.iconName]} icon={name} size='2x' border fixedWidth />);
+                    })}
+                </Box>
+            </Fade>
+
         </div>
     );
 }

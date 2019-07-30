@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import intelex from '../res/intelex.png'
+import Fade from 'react-reveal/Fade';
 
 const useStyles = makeStyles({
     experiencepage: {
@@ -22,30 +22,31 @@ const Experience = () => {
 
     return (
         <div className={`experience ${classes.experiencepage}`}>
-            <h2>Experience</h2>
-            <hr />
-            <h2>Experience</h2>
-            <h2>Experience</h2>
-            <h2>Experience</h2>
-            <h2>Experience</h2>
-            <h2>Experience</h2>
-            <h2>Experience</h2>
-            <h2>Experience</h2>
-            <h2>Experience</h2>
-            <h2>Experience</h2>
-            <h2>Experience</h2>
-            <h2>Experience</h2>
-            <h2>Experience</h2>
-            <h2>Experience</h2>
-            <h2>Experience</h2>
-            <h2>Experience</h2>
-            <h2>Experience</h2>
-            <h2>Experience</h2>
-            <h2>Experience</h2>
-            <h2>Experience</h2>
-            <h2>Experience</h2>
-            <h2>Experience</h2>
-
+            <Fade>
+                <h2>Experience</h2>
+                <hr />
+                <h2>Experience</h2>
+                <h2>Experience</h2>
+                <h2>Experience</h2>
+                <h2>Experience</h2>
+                <h2>Experience</h2>
+                <h2>Experience</h2>
+                <h2>Experience</h2>
+                <h2>Experience</h2>
+                <h2>Experience</h2>
+                <h2>Experience</h2>
+                <h2>Experience</h2>
+                <h2>Experience</h2>
+                <h2>Experience</h2>
+                <h2>Experience</h2>
+                <h2>Experience</h2>
+                <h2>Experience</h2>
+                <h2>Experience</h2>
+                <h2>Experience</h2>
+                <h2>Experience</h2>
+                <h2>Experience</h2>
+                <h2>Experience</h2>
+            </Fade>
         </div>
     );
 }
