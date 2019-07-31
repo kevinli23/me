@@ -57,13 +57,13 @@ const Intro = () => {
                     <h1><span className={classes.name}>Kevin Li</span></h1>
                     <h2 className={classes.subtitle}>Computer Science Student @ UWaterloo</h2>
                     <Box display="flex" justifyContent='center' alignItems="center" className={classes.icontray}>
-                        <a href="https://github.com/kevinli23">
+                        <a href="https://github.com/kevinli23" target="_blank">
                             <FontAwesomeIcon icon={faGithub} size='3x' fixedWidth className={classes.icon} />
                         </a>
-                        <a href="https://www.linkedin.com/in/kevinli230/">
+                        <a href="https://www.linkedin.com/in/kevinli230/" target="_blank">
                             <FontAwesomeIcon icon={faLinkedin} size='3x' fixedWidth className={classes.icon} />
                         </a>
-                        <a href="https://www.linkedin.com/in/kevinli230/">
+                        <a href="https://drive.google.com/file/d/1Qnp6rfoAevVXcv0jHrQl4kM4s1VjwKLd/view?usp=sharing/" target="_blank">
                             <FontAwesomeIcon icon={faFile} size='3x' fixedWidth className={classes.icon} />
                         </a>
                     </Box>

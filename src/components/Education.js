@@ -4,7 +4,6 @@ import uwlogo from '../res/uw.png';
 import { Courses } from './Constants';
 import { Box } from '@material-ui/core';
 import Fade from 'react-reveal/Fade';
-import { black } from 'ansi-colors';
 
 const useStyles = makeStyles({
     educationpage: {
@@ -14,7 +13,7 @@ const useStyles = makeStyles({
         paddingBottom: '3vh',
         textAlign: 'left',
     },
-    box:{
+    box: {
         marginTop: '20px',
     },
     logo: {
@@ -61,7 +60,7 @@ const useStyles = makeStyles({
 
 const listCourses = (arr, classes) => {
     return arr.map(item => {
-        return(
+        return (
             <Box display="flex" flexDirection="row">
                 <a href={item.link} target="_blank">
                     <div className={classes.course}>
@@ -79,7 +78,7 @@ const listCourses = (arr, classes) => {
 const Education = () => {
     const classes = useStyles();
 
-    return(
+    return (
         <div className={`education ${classes.educationpage}`}>
             <Fade>
                 <h2>Education</h2>
@@ -107,7 +106,7 @@ const Education = () => {
                         </h4>
                         {
                             Courses.map(item => {
-                                return(
+                                return (
                                     <div>
                                         <h4>
                                             {item.year}
