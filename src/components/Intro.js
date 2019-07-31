@@ -25,7 +25,6 @@ const useStyles = makeStyles({
         marginTop: '9vh',
     }),
     intro: {
-        fontFamily: 'PT Sans Narrow, sans-serif',
         fontSize: '20px',
     },
     subtitle: {
