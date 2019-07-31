@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles, Box } from '@material-ui/core';
 import Fade from 'react-reveal/Fade';
 import intelex from '../res/intelex.png';
+import tdsb from '../res/tdsb.png';
 
 const useStyles = makeStyles({
     workpage: {
@@ -33,7 +34,7 @@ const useStyles = makeStyles({
     description: {
         marginTop: '1px',
         marginBottom: '15px',
-        fontSize: '15px'
+        fontSize: '18px'
     },
 });
 
@@ -53,6 +54,17 @@ const Work = () => {
                         </h3>
                         <h5 className={classes.description}>
                             Co-op Software Developer | April 2019 - August 2019
+                        </h5>
+                    </div>
+                </Box>
+                <Box display="flex" flexDirection="row" className={classes.box}>
+                    <img className={classes.logo} src={tdsb} />
+                    <div>
+                        <h3 className={classes.title}>
+                            Toronto District School Board
+                        </h3>
+                        <h5 className={classes.description}>
+                            Robotics Mentor | July 2018
                         </h5>
                     </div>
                 </Box>
