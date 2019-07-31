@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core';
 import Box from '@material-ui/core/Box';
 import { Link, animateScroll as scroll } from "react-scroll";
 import '../css/Navbar.css';
-import Fade from 'react-reveal/Fade';
 
 const useStyles = makeStyles({
   root: {
@@ -27,7 +26,6 @@ const Navbar = () => {
 
   return (
     <Box position="fixed" display="flex" alignItems="center" justifyContent="center" m={0} p={0} className={classes.appbar}>
-      <Fade>
         <Link
           activeClass="active"
           to="about"
@@ -75,7 +73,6 @@ const Navbar = () => {
         >
           Education
                 </Link>
-      </Fade>
     </Box>
   );
 }

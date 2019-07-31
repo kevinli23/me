@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import Landing from './Landing'
 import About from './About';
 import Intro from './Intro';
 import Work from './Work';
@@ -35,10 +36,11 @@ export default function Body() {
 
   return (
     <div className={classes.root}>
+      <Landing />
       <Grid container wrap="nowrap" spacing={2}>
         <Grid item xs={sides} />
         <Grid item xs={content} wrap="nowrap">
-          <Intro />
+          {/* <Intro /> */}
           <About />
           <Work />
           <Projects />
