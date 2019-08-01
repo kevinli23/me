@@ -7,7 +7,6 @@ import { faFile } from "@fortawesome/free-solid-svg-icons";
 import '../css/Landing.css'
 import ParticleComponent from './ParticleComponent';
 import { Link } from "react-scroll";
-import Typist from 'react-typist';
 
 const useStyles = makeStyles({
     landing: {
@@ -62,32 +61,34 @@ const Landing = () => {
             <ParticleComponent />
             <div className={classes.landing}>
                 <div className={classes.main}>
-                    <Typist cursor={{show: false}}>
-                        <div className={classes.text}>
-                            I'm Kevin Li
-                        </div>
-                        <div className={classes.text}>
-                            Computer Science Student @ UWaterloo
-                        </div>
-                    </Typist>
+                <div className={classes.text}>
+                    <Fade>
+                        I'm Kevin Li
+                    </Fade>
+                </div>
+                <div className={classes.text}>
+                    <Fade delay={1000}>
+                        Computer Science Student @ UWaterloo
+                    </Fade>
+                </div>
                     <Box display="flex" alignItems="center" className={classes.icontray}>
-                        <Fade delay={3500}>
+                        <Fade delay={2000}>
                             <a href="https://github.com/kevinli23" target="_blank">
                                 <FontAwesomeIcon icon={faGithub} size='3x' fixedWidth className={classes.icon} />
                             </a>
                         </Fade>
-                        <Fade delay={3800}>
+                        <Fade delay={2300}>
                             <a href="https://www.linkedin.com/in/kevinli230/" target="_blank">
                                 <FontAwesomeIcon icon={faLinkedin} size='3x' fixedWidth className={classes.icon} />
                             </a>
                         </Fade>
-                        <Fade delay={4100}>
+                        <Fade delay={2600}>
                             <a href="https://drive.google.com/file/d/1Qnp6rfoAevVXcv0jHrQl4kM4s1VjwKLd/view?usp=sharing/" target="_blank">
                                 <FontAwesomeIcon icon={faFile} size='3x' fixedWidth className={classes.icon} />
                             </a>
                         </Fade>
                     </Box>
-                </div>
+            </div>
             <Link
                 activeClass="active"
                 to="about"

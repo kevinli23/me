@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Landing from './Landing'
 import About from './About';
-import Intro from './Intro';
 import Work from './Work';
 import Education from './Education';
 import Projects from './Projects';
@@ -40,7 +39,6 @@ export default function Body() {
       <Grid container wrap="nowrap" spacing={2}>
         <Grid item xs={sides} />
         <Grid item xs={content} wrap="nowrap">
-          {/* <Intro /> */}
           <About />
           <Work />
           <Projects />
