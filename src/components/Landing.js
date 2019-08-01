@@ -5,17 +5,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 import '../css/Landing.css'
+import Particles from 'react-particles-js'
 
 const useStyles = makeStyles({
     landing: {
         width: '100vw',
         height: '100vh',
-        backgroundColor: '#000',
+        backgroundColor: 'transparent',
         color: '#FFF',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        zIndex: '2',
+        position: 'absolute',
+        top: 0,
+        left: 0,
     },
     icontray: ({isPhone}) => ({
         height: '5vh',
@@ -38,8 +43,39 @@ const useStyles = makeStyles({
 const Landing = () => {
     const classes = useStyles();
     return(
-        <div className={classes.landing}>
-            <div className={classes.main}>
+        <div style={{marginBottom: '100vh'}}>
+            <Particles
+                params={{
+                    "particles": {
+                        "number": {
+                            "value": 65
+                        },
+                    },
+                    "interactivity": {
+                        "events": {
+                            "onhover": {
+                                "enable": true,
+                                "mode": "repulse"
+                            },
+                            "onresize": {
+                                "enable": true,
+                                "density_auto": true,
+                                // "density_area": 400 // nb_particles = particles.nb * (canvas width *  canvas height / 1000) / density_area
+                            }
+                        }
+                    }
+                }}
+                style={{
+                        width: '100vw',
+                        height: '100vh',
+                        background: `#000000`,
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                 }}
+            />
+            <div className={classes.landing}>
+                    <div className={classes.main}>
                 <div className={classes.text}>
                     <Fade>
                         I'm Kevin Li
@@ -65,6 +101,7 @@ const Landing = () => {
                 </Fade>
             </div>
             {/* <div class="arrow bounce"></div> */}
+        </div>
         </div>
     );
 };
