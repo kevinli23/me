@@ -86,19 +86,23 @@ const Landing = () => {
                         Computer Science Student @ UWaterloo
                     </Fade>
                 </div>
-                <Fade delay={2000}>
                     <Box display="flex" alignItems="center" className={classes.icontray}>
-                                <a href="https://github.com/kevinli23" target="_blank">
-                                    <FontAwesomeIcon icon={faGithub} size='3x' fixedWidth className={classes.icon} />
-                                </a>
-                                <a href="https://www.linkedin.com/in/kevinli230/" target="_blank">
-                                    <FontAwesomeIcon icon={faLinkedin} size='3x' fixedWidth className={classes.icon} />
-                                </a>
-                                <a href="https://drive.google.com/file/d/1Qnp6rfoAevVXcv0jHrQl4kM4s1VjwKLd/view?usp=sharing/" target="_blank">
-                                    <FontAwesomeIcon icon={faFile} size='3x' fixedWidth className={classes.icon} />
-                                </a>
+                                <Fade delay={2000}>
+                                    <a href="https://github.com/kevinli23" target="_blank">
+                                        <FontAwesomeIcon icon={faGithub} size='3x' fixedWidth className={classes.icon} />
+                                    </a>
+                                </Fade>
+                                <Fade delay={2300}>
+                                    <a href="https://www.linkedin.com/in/kevinli230/" target="_blank">
+                                        <FontAwesomeIcon icon={faLinkedin} size='3x' fixedWidth className={classes.icon} />
+                                    </a>
+                                </Fade>
+                                <Fade delay={2600}>
+                                    <a href="https://drive.google.com/file/d/1Qnp6rfoAevVXcv0jHrQl4kM4s1VjwKLd/view?usp=sharing/" target="_blank">
+                                        <FontAwesomeIcon icon={faFile} size='3x' fixedWidth className={classes.icon} />
+                                    </a>
+                                </Fade>
                     </Box>
-                </Fade>
             </div>
             {/* <div class="arrow bounce"></div> */}
         </div>
