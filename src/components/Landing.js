@@ -50,7 +50,7 @@ const useStyles = makeStyles({
         paddingBottom: '50px',
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
     }
 });
 
@@ -96,6 +96,7 @@ const Landing = () => {
                 smooth={true}
                 offset={-10}
                 duration={1000}
+                style={{cursor: 'pointer'}}
             >
                 <div className={`container ${classes.arrow}`}>
                     <div class="chevron"></div>
