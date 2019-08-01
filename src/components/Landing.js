@@ -46,7 +46,10 @@ const useStyles = makeStyles({
     },
     arrow: {
         flexDirection: 'column',
-        paddingBottom: '50px'
+        paddingBottom: '50px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
     }
 });
 
@@ -97,6 +100,7 @@ const Landing = () => {
                     <div class="chevron"></div>
                     <div class="chevron"></div>
                     <div class="chevron"></div>
+                    <span class="texts">Scroll down</span>
                 </div>
             </Link>
             {/* <div class="arrow bounce"></div> */}
