@@ -16,6 +16,7 @@ const ParticleComponent = () => {
                         "enable": true,
                         "mode": "repulse"
                     },
+                    "resize": true,
                     "onresize": {
                         "enable": true,
                         "density_auto": true,

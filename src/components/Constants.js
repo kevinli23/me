@@ -85,7 +85,7 @@ export const projectInformation = [
     {
         name: "Dark Run", 
         image: image2,
-        description: 'Puzzle Platformer made using Java',
+        description: 'Puzzle Platformer made using Java and applies the core concepts of OOP. Uses a tile based mechanics for unit collision',
         link: 'https://github.com/kevinli23/Dark-Run',
         icons: [faJava]
     },
