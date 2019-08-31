@@ -25,7 +25,7 @@ const useStyles = makeStyles({
         left: 0,
         overflowX: 'hidden',
     },
-    icontray: ({isPhone}) => ({
+    icontray: ({ isPhone }) => ({
         height: '5vh',
         marginTop: '30px',
         justifyContent: (isPhone) ? 'space-between' : 'center',
@@ -39,7 +39,7 @@ const useStyles = makeStyles({
     text: {
         marginBottom: '20px',
     },
-    main:{
+    main: {
         flexGrow: 1,
         display: 'flex',
         flexDirection: 'column',
@@ -56,21 +56,21 @@ const useStyles = makeStyles({
 
 const Landing = () => {
     const classes = useStyles();
-    return(
-        <div style={{marginBottom: '100vh'}}>
+    return (
+        <div style={{ marginBottom: '100vh' }}>
             <ParticleComponent />
             <div className={classes.landing}>
                 <div className={classes.main}>
-                <div className={classes.text}>
-                    <Fade>
-                        I'm Kevin Li
+                    <div className={classes.text}>
+                        <Fade>
+                            I'm Kevin Li
                     </Fade>
-                </div>
-                <div className={classes.text}>
-                    <Fade delay={1000}>
-                        Computer Science Student @ UWaterloo
+                    </div>
+                    <div className={classes.text}>
+                        <Fade delay={1000}>
+                            Computer Science Student @ UWaterloo
                     </Fade>
-                </div>
+                    </div>
                     <Box display="flex" alignItems="center" className={classes.icontray}>
                         <Fade delay={2000}>
                             <a href="https://github.com/kevinli23" target="_blank">
@@ -83,30 +83,30 @@ const Landing = () => {
                             </a>
                         </Fade>
                         <Fade delay={2600}>
-                            <a href="https://drive.google.com/file/d/1Qnp6rfoAevVXcv0jHrQl4kM4s1VjwKLd/view?usp=sharing/" target="_blank">
+                            <a href="https://drive.google.com/file/d/15GXQqigZm1RIX0tZIU4c7UYjXpZYJPtw/view?usp=sharing" target="_blank">
                                 <FontAwesomeIcon icon={faFile} size='3x' fixedWidth className={classes.icon} />
                             </a>
                         </Fade>
                     </Box>
-            </div>
-            <Link
-                activeClass="active"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-10}
-                duration={1000}
-                style={{cursor: 'pointer'}}
-            >
-                <div className={`container ${classes.arrow}`}>
-                    <div class="chevron"></div>
-                    <div class="chevron"></div>
-                    <div class="chevron"></div>
-                    <span class="texts">Scroll down</span>
                 </div>
-            </Link>
-            {/* <div class="arrow bounce"></div> */}
-        </div>
+                <Link
+                    activeClass="active"
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={-10}
+                    duration={1000}
+                    style={{ cursor: 'pointer' }}
+                >
+                    <div className={`container ${classes.arrow}`}>
+                        <div class="chevron"></div>
+                        <div class="chevron"></div>
+                        <div class="chevron"></div>
+                        <span class="texts">Scroll down</span>
+                    </div>
+                </Link>
+                {/* <div class="arrow bounce"></div> */}
+            </div>
         </div>
     );
 };
