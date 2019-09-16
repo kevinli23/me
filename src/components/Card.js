@@ -80,7 +80,7 @@ const MyCard = ({image, title, desc, link, icons, subdesc}) => {
           <Typography className={classes.desc} variant="body2" component="p">
             {desc}
           </Typography>
-          <a href={link} target="_blank" className={classes.learnMore}>
+          <a href={link} rel="noopener noreferrer" target="_blank" className={classes.learnMore}>
                 Learn More
           </a>
     </div>

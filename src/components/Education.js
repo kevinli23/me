@@ -62,7 +62,7 @@ const listCourses = (arr, classes) => {
     return arr.map(item => {
         return (
             <Box display="flex" flexDirection="row">
-                <a href={item.link} target="_blank">
+                <a href={item.link} rel="noopener noreferrer" target="_blank">
                     <div className={classes.course}>
                         {item.code}
                     </div>
