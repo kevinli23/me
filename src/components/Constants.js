@@ -26,17 +26,17 @@ const icons = [faGithub, faLinkedin, faResume, faHackerrank, faDevpost];
 const links = [
   "https://github.com/kevinli23",
   "https://www.linkedin.com/in/kevinli230/",
-  "https://drive.google.com/file/d/1fesO0LCmkZXCgOz41IZIWRwrUVboMtAG/view?usp=sharing",
+  "https://drive.google.com/file/d/1jw06FQRBbL9h_gxWlDPvi1KFqeGmpLbK/view?usp=sharing",
   "https://www.hackerrank.com/cskevinli23",
   "https://devpost.com/kevinli23"
 ];
 const delay = [2000, 2300, 2600, 2900, 3200];
 export const menuIcons = [
-    {"icon": icons[0], "link": links[0], "delay": delay[0]},
-    {"icon": icons[1], "link": links[1], "delay": delay[1]},
-    {"icon": icons[2], "link": links[2], "delay": delay[2]},
-    {"icon": icons[3], "link": links[3], "delay": delay[3]},
-    {"icon": icons[4], "link": links[4], "delay": delay[4]},
+  { "icon": icons[0], "link": links[0], "delay": delay[0] },
+  { "icon": icons[1], "link": links[1], "delay": delay[1] },
+  { "icon": icons[2], "link": links[2], "delay": delay[2] },
+  { "icon": icons[3], "link": links[3], "delay": delay[3] },
+  { "icon": icons[4], "link": links[4], "delay": delay[4] },
 ]
 
 function Course(code, name, link) {
