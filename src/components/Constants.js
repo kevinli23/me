@@ -169,6 +169,7 @@ export const aboutMeText = [
 export const projectInformation = [
   {
     name: "Pengu's Dank Adventure",
+    subdesc: "",
     image: image1,
     description: `Platformer game that was made using JFrame and Graphics2D for rendering and Thread based execution for updates.
                       Also utilizes sockets for a Java backend that accepts simple login and message packets`,
@@ -177,6 +178,7 @@ export const projectInformation = [
   },
   {
     name: "Dark Run",
+    subdesc: "",
     image: image2,
     description:
       "Puzzle Platformer made using Java and applies the core concepts of OOP. Uses a tile based mechanics for unit collision",
@@ -185,6 +187,7 @@ export const projectInformation = [
   },
   {
     name: "Chronovise",
+    subdesc: "Hack the North 2018",
     image: image3,
     description:
       "Chrome Extension to help you manage access to websites seperated by four different workspaces",
@@ -193,6 +196,7 @@ export const projectInformation = [
   },
   {
     name: "Portfolio Website",
+    subdesc: "",
     image: image4,
     description:
       "A React based portfolio website that uses a mix of Material Design and creativity!",
@@ -200,10 +204,11 @@ export const projectInformation = [
     icons: [faReact, faCss3, faJs, faNode]
   },
   {
-    name: "Hand Sign Ninjutsu Simular",
+    name: "Hand Sign Ninjutsu Simulator",
+    subdesc: "Hack the North 2019 Finalist",
     image: image5,
     description:
-      "Built at HTN19, where our team used handsign recognition and our voices to simulate ninjutsu from the anime Naruto in a one versus one AR battle",
+      "Built at Hack the North 2019, where our team used handsign recognition and our voices to simulate ninjutsu from the anime Naruto in a one versus one AR battle",
     link:
       "https://devpost.com/software/ar-voice-control-and-ml-hand-sign-ninjutsu-battle-simulator",
     icons: [faPython, faReact, faJs, faTensorflow]

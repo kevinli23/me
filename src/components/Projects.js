@@ -38,7 +38,7 @@ const Projects = () => {
                     {
                         projectInformation.map(proj => {
                             return(
-                                <Card image={proj.image} title={proj.name} desc={proj.description} link={proj.link} icons={proj.icons} />
+                                <Card image={proj.image} title={proj.name} desc={proj.description} link={proj.link} icons={proj.icons} subdesc={proj.subdesc} />
                             );
                         })
                     }

@@ -51,10 +51,14 @@ const useStyles = makeStyles({
   icontray: {
     marginTop: '5px',
     marginBottom: '15px',
+  },
+  subdesc:{
+    fontSize: '20px',
+    marginTop: '-3px',
   }
 });
 
-const MyCard = ({image, title, desc, link, icons}) => {
+const MyCard = ({image, title, desc, link, icons, subdesc}) => {
   const classes = useStyles();
   return(
     <div className={classes.card}>
@@ -62,6 +66,10 @@ const MyCard = ({image, title, desc, link, icons}) => {
           <Typography gutterBottom variant="h5" component="h2">
             <h4 className={classes.title}>{title}</h4>
           </Typography>
+          {
+            (subdesc === "") ? <div></div> : <p className={classes.subdesc} >{subdesc}</p>
+          }
+
           <Box className={classes.icontray} justifyContent={"space-between"} display="flex">
             {
               icons.map(name => {
