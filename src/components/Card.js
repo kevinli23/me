@@ -58,7 +58,7 @@ const MyCard = ({image, title, desc, link, icons}) => {
   const classes = useStyles();
   return(
     <div className={classes.card}>
-          <img src={image} />
+          <img style={{maxWidth: '300px', maxHeight: '300px'}} src={image} />
           <Typography gutterBottom variant="h5" component="h2">
             <h4 className={classes.title}>{title}</h4>
           </Typography>
