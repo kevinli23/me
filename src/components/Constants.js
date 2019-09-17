@@ -39,10 +39,11 @@ export const menuIcons = [
   { "icon": icons[4], "link": links[4], "delay": delay[4] },
 ]
 
-function Course(code, name, link) {
+function Course(code, name, link, bold) {
   this.code = code;
   this.name = name;
   this.link = link;
+  this.bold = bold;
 }
 
 export const iconColors = {
@@ -68,52 +69,62 @@ const Courses18 = [
   new Course(
     "CS 135",
     "Designing Functional Programs",
-    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-CS.html#CS135"
+    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-CS.html#CS135",
+    true
   ),
   new Course(
     "CS 136",
     "Elementary Algorithm Design and Data Abstraction",
-    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-CS.html#CS136"
+    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-CS.html#CS136",
+    true
   ),
   new Course(
     "SCI 206",
     "The Physics of How Things Work",
-    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-SCI.html#SCI206"
+    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-SCI.html#SCI206",
+    false
   ),
   new Course(
     "MATH 135",
     "Algebra for Honours Mathematics",
-    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-MATH.html#MATH135"
+    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-MATH.html#MATH135",
+    false
   ),
   new Course(
     "MATH 136",
     "Linear Algebra 1 for Honours Mathematics",
-    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-MATH.html#MATH136"
+    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-MATH.html#MATH136",
+    false
   ),
   new Course(
     "MATH 137",
     "Calculus 1 for Honours Mathematics",
-    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-MATH.html#MATH137"
+    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-MATH.html#MATH137",
+    false
   ),
   new Course(
     "MATH 138",
     "Calculus 2 for Honours Mathematics",
-    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-MATH.html#MATH138"
+    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-MATH.html#MATH138",
+    false
   ),
   new Course(
     "ENGL 109",
     "Introduction to Academic Writing",
-    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-ENGL.html#ENGL109"
+    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-ENGL.html#ENGL109",
+    false
   ),
   new Course(
     "ENGL 119",
     "Communications in Mathematics & Computer Science",
-    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-ENGL.html#ENGL119"
+    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-ENGL.html#ENGL119",
+    false
   ),
   new Course(
     "ECON 101",
     "Introduction to Microeconomics",
-    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-ECON.html#ECON101"
+    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-ECON.html#ECON101",
+    false
   )
 ];
 
@@ -123,28 +134,33 @@ const Courses19 = [
   new Course(
     "CS 245",
     "Logic and Computation",
-    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-CS.html#CS245"
+    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-CS.html#CS245",
+    true
   ),
   new Course(
     "CS 246",
     "Object-Oriented Software Development",
-    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-CS.html#CS246"
+    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-CS.html#CS246",
+    true
   ),
   new Course(
     "CS 251",
     "Computer Organization and Design",
     "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-CS.html#CS251"
+    ,true
   ),
   // {code: 'MATH 239', name: "Introduction to Combinatorics"},
   new Course(
     "STAT 230",
     "Probability",
-    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-STAT.html#STAT230"
+    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-STAT.html#STAT230",
+    false
   ),
   new Course(
     "ECON 201",
     "Microeconomic Theory for Business and Policy",
-    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-ECON.html#ECON201"
+    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-ECON.html#ECON201",
+    false
   )
 ];
 

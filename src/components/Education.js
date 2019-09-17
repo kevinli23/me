@@ -68,7 +68,7 @@ const listCourses = (arr, classes) => {
                     </div>
                 </a>
                 <div className={classes.courseName}>
-                    {item.name}
+                    {((item.bold) ? <b>{item.name}</b> : <div>{item.name}</div>)}
                 </div>
             </Box>
         );
