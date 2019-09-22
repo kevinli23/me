@@ -3,6 +3,8 @@ import { makeStyles, Box } from '@material-ui/core';
 import Fade from 'react-reveal/Fade';
 import intelex from '../res/intelex.png';
 import tdsb from '../res/tdsb.png';
+import waterloop from '../res/waterloop.png';
+import waterloo from '../res/uw.png';
 
 const useStyles = makeStyles({
     workpage: {
@@ -14,7 +16,7 @@ const useStyles = makeStyles({
         justifyContent: 'center',
         fontSize: '1.5em',
     },
-    box:{
+    box: {
         marginTop: '20px',
     },
     logo: {
@@ -44,8 +46,30 @@ const Work = () => {
     return (
         <div className={`experience ${classes.workpage}`}>
             <Fade>
-                <h2>Work</h2>
+                <h2>Experience</h2>
                 <hr />
+                <Box display="flex" flexDirection="row" className={classes.box}>
+                    <img className={classes.logo} src={waterloop} />
+                    <div>
+                        <h3 className={classes.title}>
+                            Waterloop
+                        </h3>
+                        <h5 className={classes.description}>
+                            Embedded Software Engineer | September 2019 - Present
+                        </h5>
+                    </div>
+                </Box>
+                <Box display="flex" flexDirection="row" className={classes.box}>
+                    <img className={classes.logo} src={waterloo} />
+                    <div>
+                        <h3 className={classes.title}>
+                            University of Waterloo
+                        </h3>
+                        <h5 className={classes.description}>
+                            Math Teaching Assistant | September 2019 - Present
+                        </h5>
+                    </div>
+                </Box>
                 <Box display="flex" flexDirection="row" className={classes.box}>
                     <img className={classes.logo} src={intelex} />
                     <div>
