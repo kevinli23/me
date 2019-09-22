@@ -26,7 +26,7 @@ const icons = [faGithub, faLinkedin, faResume, faHackerrank, faDevpost];
 const links = [
   "https://github.com/kevinli23",
   "https://www.linkedin.com/in/kevinli230/",
-  "https://drive.google.com/file/d/1jw06FQRBbL9h_gxWlDPvi1KFqeGmpLbK/view?usp=sharing",
+  "https://drive.google.com/file/d/12Bs0TaZMonWbtdGxX3mYArhpQuQDuww4/view?usp=sharing",
   "https://www.hackerrank.com/cskevinli23",
   "https://devpost.com/kevinli23"
 ];
@@ -147,7 +147,7 @@ const Courses19 = [
     "CS 251",
     "Computer Organization and Design",
     "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-CS.html#CS251"
-    ,true
+    , true
   ),
   // {code: 'MATH 239', name: "Introduction to Combinatorics"},
   new Course(
