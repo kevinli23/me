@@ -4,6 +4,7 @@ import uwlogo from '../res/uw.png';
 import { Courses } from './Constants';
 import { Box } from '@material-ui/core';
 import Fade from 'react-reveal/Fade';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const useStyles = makeStyles({
     educationpage: {
@@ -19,6 +20,8 @@ const useStyles = makeStyles({
     logo: {
         width: '70px',
         height: '70px',
+        minWidth: '70px',
+        minHeight: '70px',
         marginRight: '25px',
     },
     title: {
@@ -77,6 +80,7 @@ const listCourses = (arr, classes) => {
 
 const Education = () => {
     const classes = useStyles();
+    const phone = useMediaQuery('(max-width:400px)');
 
     return (
         <div className={`education ${classes.educationpage}`}>
@@ -84,7 +88,7 @@ const Education = () => {
                 <h2>Education</h2>
                 <hr />
                 <Box display="flex" flexDirection="row" className={classes.box}>
-                    <img className={classes.logo} src={uwlogo} />
+                    {(!phone) ? <img className={classes.logo} src={uwlogo} /> : <div />}
                     <div>
                         <h3 className={classes.title}>
                             University of Waterloo

@@ -179,7 +179,7 @@ export const aboutMeText = [
 
   `I am currently seeking an internship opportunity for the summer (May to August) of 2020 that involves Software Development or Machine Learning!`,
 
-  `Languages | Tools | Frameworks that I am familar with:`
+  `Languages | Frameworks | Tools that I am familar with:`
 ];
 
 export const projectInformation = [

@@ -5,8 +5,9 @@ import intelex from '../res/intelex.png';
 import tdsb from '../res/tdsb.png';
 import waterloop from '../res/waterloop.png';
 import waterloo from '../res/uw.png';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(isPhone => ({
     workpage: {
         flex: 1,
         alignItems: 'flex-start',
@@ -17,16 +18,19 @@ const useStyles = makeStyles({
         fontSize: '1.5em',
     },
     box: {
-        marginTop: '20px',
+        marginTop: `${(isPhone) ? "50px" : "20px"}`,
+        marginBottom: `${(isPhone) ? "-30px" : "0px"}`,
     },
     logo: {
         width: '70px',
         height: '70px',
+        minWidth: '70px',
+        minHeight: '70px',
         marginRight: '25px',
     },
     title: {
         margin: '0px',
-        fontSize: '30px'
+        fontSize: `${(isPhone) ? "18px" : "30px"}`,
     },
     subtitle: {
         margin: '0px',
@@ -36,12 +40,13 @@ const useStyles = makeStyles({
     description: {
         marginTop: '1px',
         marginBottom: '15px',
-        fontSize: '18px'
+        fontSize: `${(isPhone) ? "15px" : "18px"}`
     },
-});
+}));
 
 const Work = () => {
-    const classes = useStyles();
+    const isPhone = useMediaQuery('(max-width:400px)');
+    const classes = useStyles(isPhone);
 
     return (
         <div className={`experience ${classes.workpage}`}>
@@ -55,7 +60,7 @@ const Work = () => {
                             Waterloop
                         </h3>
                         <h5 className={classes.description}>
-                            Embedded Software Engineer | September 2019 - Present
+                            Software Engineer | September 2019 - Present
                         </h5>
                     </div>
                 </Box>
@@ -66,7 +71,7 @@ const Work = () => {
                             University of Waterloo
                         </h3>
                         <h5 className={classes.description}>
-                            Math Teaching Assistant | September 2019 - Present
+                            Teaching Assistant | September 2019 - Present
                         </h5>
                     </div>
                 </Box>
@@ -77,7 +82,7 @@ const Work = () => {
                             Intelex Technologies Inc.
                         </h3>
                         <h5 className={classes.description}>
-                            Co-op Software Developer | April 2019 - August 2019
+                            Software Developer | April 2019 - August 2019
                         </h5>
                     </div>
                 </Box>
