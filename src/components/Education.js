@@ -80,7 +80,7 @@ const listCourses = (arr, classes) => {
 
 const Education = () => {
     const classes = useStyles();
-    const phone = useMediaQuery('(max-width:400px)');
+    const phone = useMediaQuery('(max-width:425px)');
 
     return (
         <div className={`education ${classes.educationpage}`}>

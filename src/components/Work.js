@@ -7,7 +7,7 @@ import waterloop from '../res/waterloop.png';
 import waterloo from '../res/uw.png';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
-const useStyles = makeStyles(isPhone => ({
+const useStyles = makeStyles({
     workpage: {
         flex: 1,
         alignItems: 'flex-start',
@@ -18,8 +18,7 @@ const useStyles = makeStyles(isPhone => ({
         fontSize: '1.5em',
     },
     box: {
-        marginTop: `${(isPhone) ? "50px" : "20px"}`,
-        marginBottom: `${(isPhone) ? "-30px" : "0px"}`,
+        marginTop: '20px',
     },
     logo: {
         width: '70px',
@@ -30,7 +29,7 @@ const useStyles = makeStyles(isPhone => ({
     },
     title: {
         margin: '0px',
-        fontSize: `${(isPhone) ? "18px" : "30px"}`,
+        fontSize: '30px'
     },
     subtitle: {
         margin: '0px',
@@ -40,12 +39,12 @@ const useStyles = makeStyles(isPhone => ({
     description: {
         marginTop: '1px',
         marginBottom: '15px',
-        fontSize: `${(isPhone) ? "15px" : "18px"}`
+        fontSize: '18px'
     },
-}));
+});
 
 const Work = () => {
-    const isPhone = useMediaQuery('(max-width:400px)');
+    const isPhone = useMediaQuery('(max-width:425px)');
     const classes = useStyles(isPhone);
 
     return (

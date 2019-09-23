@@ -44,9 +44,9 @@ const useStyles = makeStyles({
 const icons = [faJava, faPython, faGithub, faJs, faReact, faHtml5, faCss3, faBootstrap, faLinux, faGit, faTensorflow, faCsharp, faMongo, faCpp, faNode];
 
 const About = () => {
-    const phone = useMediaQuery('(max-width:400px)');
+    const isPhone = useMediaQuery('(max-width:425px)');
     return (
-        (phone) ? <MobileAbout /> : <DesktopAbout />
+        (isPhone) ? <MobileAbout /> : <DesktopAbout />
     )
 }
 
