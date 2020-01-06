@@ -173,8 +173,8 @@ const Courses19 = [
   ),
   new Course(
     "ECON 102",
-    "Microeconomic Theory for Business and Policy",
     "Introduction to Macroeconomics",
+    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-ECON.html#ECON102",
     false
   ),
   new Course(
