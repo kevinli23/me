@@ -26,7 +26,7 @@ const icons = [faGithub, faLinkedin, faResume, faHackerrank, faDevpost];
 const links = [
   "https://github.com/kevinli23",
   "https://www.linkedin.com/in/kevinli230/",
-  "https://drive.google.com/file/d/12Bs0TaZMonWbtdGxX3mYArhpQuQDuww4/view?usp=sharing",
+  "https://drive.google.com/file/d/1moh02QOlrFPYeekupLsjG-DElsd5c6Wn/view?usp=sharing",
   "https://www.hackerrank.com/cskevinli23",
   "https://devpost.com/kevinli23"
 ];
