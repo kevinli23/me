@@ -38,6 +38,11 @@ const useStyles = makeStyles({
         marginBottom: '15px',
         fontSize: '15px'
     },
+    averages:{
+        marginTop: '-10px',
+        marginBottom: '15px',
+        fontSize: '15px'
+    },
     bullet: {
         margin: '0px',
         marginTop: '10px',
@@ -95,6 +100,12 @@ const Education = () => {
                         </h3>
                         <h5 className={classes.description}>
                             Bachelor of Computer Science | 2018 - 2023
+                        </h5>
+                        <h5 className={classes.averages}>
+                            CGPA:&nbsp;&nbsp;3.85
+                        </h5>
+                        <h5 className={classes.averages}>
+                            CAV:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;87.60
                         </h5>
                         <h4 className={classes.subtitle}>
                             Scholarships:
