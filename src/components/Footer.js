@@ -28,7 +28,7 @@ const Footer = () => {
             <Box flexGrow={1} display="flex" alignItems="center">
                 Made with <img src={logo} className="App-logo" alt="logo" />
             </Box>
-            © Kevin Li 2019
+            © Kevin Li 2020
         </Box>
     );
 }

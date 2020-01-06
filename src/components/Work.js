@@ -52,7 +52,7 @@ const Work = () => {
             <Fade>
                 <h2>Experience</h2>
                 <hr />
-                <Box display="flex" flexDirection="row" className={classes.box}>
+                {/* <Box display="flex" flexDirection="row" className={classes.box}>
                     <img className={classes.logo} src={waterloop} />
                     <div>
                         <h3 className={classes.title}>
@@ -62,7 +62,7 @@ const Work = () => {
                             Software Engineer | September 2019 - Present
                         </h5>
                     </div>
-                </Box>
+                </Box> */}
                 <Box display="flex" flexDirection="row" className={classes.box}>
                     <img className={classes.logo} src={waterloo} />
                     <div>
@@ -70,7 +70,7 @@ const Work = () => {
                             University of Waterloo
                         </h3>
                         <h5 className={classes.description}>
-                            Teaching Assistant | September 2019 - Present
+                            Teaching Assistant | September 2019 - December 2019
                         </h5>
                     </div>
                 </Box>

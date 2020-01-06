@@ -1,4 +1,5 @@
 import React from "react";
+import ParticleComponent from "./ParticleComponent";
 import { makeStyles, Box } from "@material-ui/core";
 import Fade from "react-reveal/Fade";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,7 +10,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faDevpost, faResume } from "./Icons";
 import "../css/Landing.css";
-import ParticleComponent from "./ParticleComponent";
 import { Link } from "react-scroll";
 import {menuIcons} from './Constants';
 

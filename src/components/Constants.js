@@ -129,8 +129,18 @@ const Courses18 = [
 ];
 
 const Courses19 = [
-  // {code: 'CS 240', name: "Data Structures and Data Management"},
-  // {code: 'CS 241', name: "Foundations of Sequential Programs"},
+  new Course(
+    "CS 240",
+    "Data Structures and Data Management",
+    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-CS.html#CS240",
+    true
+  ),
+  new Course(
+    "CS 241",
+    "Foundations of Sequential Programs",
+    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-CS.html#CS241",
+    true
+  ),
   new Course(
     "CS 245",
     "Logic and Computation",
@@ -149,7 +159,12 @@ const Courses19 = [
     "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-CS.html#CS251"
     , true
   ),
-  // {code: 'MATH 239', name: "Introduction to Combinatorics"},
+  new Course(
+    "MATH 239",
+    "Introduction to Combinatorics",
+    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-MATH.html#MATH239",
+    false
+  ),
   new Course(
     "STAT 230",
     "Probability",
@@ -157,9 +172,21 @@ const Courses19 = [
     false
   ),
   new Course(
+    "ECON 102",
+    "Microeconomic Theory for Business and Policy",
+    "Introduction to Macroeconomics",
+    false
+  ),
+  new Course(
     "ECON 201",
     "Microeconomic Theory for Business and Policy",
     "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-ECON.html#ECON201",
+    false
+  ),
+  new Course(
+    "SCI 207",
+    "Physics, the Universe, and Everything",
+    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-SCI.html#SCI207",
     false
   )
 ];
@@ -177,7 +204,7 @@ export const aboutMeText = [
   `Aside from programming and learning, on my spare time I enjoy playing basketball (and keeping up with the NBA), watching cooking videos, following politics and
     playing a bit of video games.`,
 
-  `I am currently seeking an internship opportunity for the summer (May to August) of 2020 that involves Software Development or Machine Learning!`,
+  `I am currently seeking an internship opportunity for the summer (May to August) of 2020 that involves Software Development or Deep Learning`,
 
   `Languages | Frameworks | Tools that I am familar with:`
 ];
