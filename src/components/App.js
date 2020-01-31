@@ -1,7 +1,7 @@
-import React from 'react';
-import '../css/App.css';
-import Navbar from './Navbar';
-import Body from './Body';
+import React from "react";
+import "../css/App.css";
+import Navbar from "./Navbar";
+import Body from "./Body";
 
 const App = () => {
   return (
@@ -10,6 +10,6 @@ const App = () => {
       <Body />
     </div>
   );
-}
+};
 
 export default App;
