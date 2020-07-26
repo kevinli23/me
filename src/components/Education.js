@@ -25,8 +25,8 @@ const listCourses = (arr, classes) => {
 };
 
 const Education = () => {
-  const classes = useStyles();
   const phone = useMediaQuery("(max-width:425px)");
+  const classes = useStyles();
 
   return (
     <div className={`education ${classes.educationpage}`}>
@@ -36,8 +36,8 @@ const Education = () => {
         <Box display="flex" flexDirection="row" className={classes.box}>
           {!phone ? <img className={classes.logo} src={uwlogo} /> : <div />}
           <div>
-            <h3 className={classes.title}>University of Waterloo</h3>
-            <h5 className={classes.description}>
+            <h3 className={phone ? classes.titleMobile : classes.title}>University of Waterloo</h3>
+            <h5 className={phone ? classes.descriptionMobile : classes.description}>
               Bachelor of Computer Science | 2018 - 2023
             </h5>
             <h5 className={classes.averages}>CGPA:&nbsp;&nbsp;3.85</h5>

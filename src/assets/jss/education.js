@@ -20,6 +20,10 @@ const educationStyle = {
     margin: "0px",
     fontSize: "30px"
   },
+  titleMobile: {
+    margin: "0px",
+    fontSize: "25px"
+  },
   subtitle: {
     margin: "0px",
     marginTop: "20px",
@@ -29,6 +33,11 @@ const educationStyle = {
     marginTop: "1px",
     marginBottom: "15px",
     fontSize: "15px"
+  },
+  descriptionMobile: {
+    marginTop: "1px",
+    marginBottom: "15px",
+    fontSize: "13px"
   },
   averages: {
     marginTop: "-10px",
