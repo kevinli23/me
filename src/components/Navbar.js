@@ -10,7 +10,7 @@ const useStyles = makeStyles({
   },
   appbar: {
     color: "white",
-    backgroundColor: "#2e3842",
+    backgroundColor: "#0a192f",
     height: "4.5vh",
     fontFamily: "Roboto Mono, monospace",
     minWidth: "100vw",
