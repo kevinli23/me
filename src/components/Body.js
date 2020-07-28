@@ -9,6 +9,7 @@ import Footer from "./Footer";
 import Grid from "@material-ui/core/Grid";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import style from "../assets/jss/body.js";
+import IconSidebar from "../components/IconSidebar";
 
 const useStyles = makeStyles(style);
 
@@ -23,7 +24,9 @@ export default function Body() {
     <div className={classes.root}>
       <Landing />
       <Grid container wrap="nowrap" spacing={2}>
-        <Grid item xs={sides} />
+        <Grid item xs={sides} >
+          <IconSidebar />
+        </Grid>
         <Grid item xs={content} wrap="nowrap">
           <About />
           <Work />

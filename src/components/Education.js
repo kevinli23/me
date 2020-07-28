@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core";
-import uwlogo from "../res/uw.png";
+import uwlogo from "../assets/images/uw.png";
 import { Courses } from "./Constants";
 import { Box } from "@material-ui/core";
 import Fade from "react-reveal/Fade";

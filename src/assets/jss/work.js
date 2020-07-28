@@ -12,38 +12,14 @@ const workStyle = {
     justifyContent: "center",
     fontSize: "1.5em"
   },
-  box: {
-    marginTop: "20px"
+  jobdesc:{
+    textAlign: "left"
   },
-  logo: {
-    width: "70px",
-    height: "70px",
-    minWidth: "70px",
-    minHeight: "70px",
-    marginRight: "25px"
+  icon:{
+    borderRadius: "50%",
   },
-  title: {
-    margin: "0px",
-    fontSize: "30px"
-  },
-  subtitle: {
-    margin: "0px",
-    marginTop: "20px",
-    fontSize: "22px"
-  },
-  description: {
-    marginTop: "1px",
-    marginBottom: "15px",
-    fontSize: "18px"
-  },
-  imageIcon: {
-    height: "100%"
-  },
-  iconRoot: {
-    textAlign: "center"
-  },
-  workDetails: {
-    marginLeft: "5%"
+  date:{
+    color: "black"
   }
 };
 
