@@ -3,7 +3,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
+import "../css/timeline.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faTensorflow, faCpp, faCsharp, faMongo } from "./Icons";
@@ -37,6 +37,7 @@ const Work = () => {
           icon={
             <img src={odaia} width="100%" height="100%" className={classes.icon} />
           }
+          iconOnClick={() => window.open("https://www.odaia.ai/", "_blank")}
         >
           <h4 className="vertical-timeline-element-title">Software Engineer</h4>
           <h5 className="vertical-timeline-element-subtitle">
