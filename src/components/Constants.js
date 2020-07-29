@@ -3,6 +3,7 @@ import image2 from "../res/proj2.png";
 import image3 from "../res/proj3.png";
 import image4 from "../res/me300.png";
 import image5 from "../res/image5.jpg";
+import image6 from "../assets/images/globalarchives.png";
 
 import odaia from "../assets/images/odaia.png";
 import intelex from "../assets/images/intelex.png";
@@ -32,6 +33,8 @@ import {
   faMongo,
   faDevpost,
   faResume,
+  faFirebase,
+  faGCP
 } from "./Icons";
 
 const icons = [faGithub, faLinkedin, faResume, faHackerrank, faDevpost];
@@ -75,6 +78,7 @@ export const iconColors = {
   Mongo: "rgb(78, 169, 75)",
   node: "rgb(102, 159, 100)",
   chrome: "rgb(11, 164, 224)",
+  firebase: "#FFA611",
 };
 
 const Courses18 = [
@@ -268,6 +272,14 @@ export const projectInformation = [
       "https://devpost.com/software/ar-voice-control-and-ml-hand-sign-ninjutsu-battle-simulator",
     icons: [faPython, faReact, faJs, faTensorflow],
   },
+  {
+    name: "World Archives",
+    subdesc: "",
+    image: image6,
+    description: "A Pub/Sub data aggregation service that archives news data in real-time according to client subscriptions. Implemented content classification and sentiment analysis with GCP. Displayed with a React frontend.",
+    link: "https://github.com/kevinli23/worldarchives",
+    icons: [faReact, faJs, faFirebase]
+  }
 ];
 
 export const WorkExperiences = [

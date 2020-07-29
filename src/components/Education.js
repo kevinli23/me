@@ -42,7 +42,7 @@ const Education = () => {
             </h5>
             <h5 className={classes.averages}>CGPA:&nbsp;&nbsp;3.85</h5>
             <h5 className={classes.averages}>
-              CAV:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;87.60
+              CAV:&nbsp;&nbsp;&nbsp;87.60
             </h5>
             <h4 className={classes.subtitle}>Scholarships:</h4>
             <p className={classes.bullet}>• B.P. Dammizio Scholarship</p>
