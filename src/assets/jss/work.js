@@ -13,13 +13,16 @@ const workStyle = {
     fontSize: "1.5em"
   },
   jobdesc:{
-    textAlign: "left"
+    textAlign: "left",
+    fontSize: "1rem",
+    listStyleType: "none",
+    paddingLeft: "5px"
   },
   icon:{
     borderRadius: "50%",
   },
   date:{
-    color: "black"
+    color: "black",
   }
 };
 

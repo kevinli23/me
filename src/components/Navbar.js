@@ -14,7 +14,8 @@ const useStyles = makeStyles({
     height: "4.5vh",
     fontFamily: "Roboto Mono, monospace",
     minWidth: "100vw",
-    zIndex: "4"
+    zIndex: "4",
+    boxShadow: "0 10px 30px -10px #303C55"
   },
   items: {
     padding: "8px"

@@ -1,7 +1,10 @@
 const bodyStyle = theme => ({
   root: {
     flexGrow: 1,
-    overflow: "hidden"
+    overflow: "hidden",
+    backgroundColor: "#F8F8FF",
+    // backgroundColor: "#172a45",
+    // color: "#e6f1ff"
   },
   paper: {
     padding: theme.spacing(2),

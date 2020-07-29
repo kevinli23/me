@@ -4,6 +4,11 @@ import image3 from "../res/proj3.png";
 import image4 from "../res/me300.png";
 import image5 from "../res/image5.jpg";
 
+import odaia from "../assets/images/odaia.png";
+import intelex from "../assets/images/intelex.png";
+import uw from "../assets/images/uw.png";
+import tdsb from "../assets/images/tdsb.png";
+
 import {
   faJava,
   faPython,
@@ -18,9 +23,16 @@ import {
   faNode,
   faChrome,
   faHackerrank,
-  faLinkedin
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { faTensorflow, faCpp, faCsharp, faMongo, faDevpost, faResume } from "./Icons";
+import {
+  faTensorflow,
+  faCpp,
+  faCsharp,
+  faMongo,
+  faDevpost,
+  faResume,
+} from "./Icons";
 
 const icons = [faGithub, faLinkedin, faResume, faHackerrank, faDevpost];
 const links = [
@@ -28,16 +40,16 @@ const links = [
   "https://www.linkedin.com/in/kevinli230/",
   "https://drive.google.com/file/d/1vhN17OqCVsn9rS1LNCJLxmcgJeQxYEk0/view?usp=sharing",
   "https://www.hackerrank.com/cskevinli23",
-  "https://devpost.com/kevinli23"
+  "https://devpost.com/kevinli23",
 ];
 const delay = [2000, 2300, 2600, 2900, 3200];
 export const menuIcons = [
-  { "icon": icons[0], "link": links[0], "delay": delay[0] },
-  { "icon": icons[1], "link": links[1], "delay": delay[1] },
-  { "icon": icons[2], "link": links[2], "delay": delay[2] },
-  { "icon": icons[3], "link": links[3], "delay": delay[3] },
-  { "icon": icons[4], "link": links[4], "delay": delay[4] },
-]
+  { icon: icons[0], link: links[0], delay: delay[0] },
+  { icon: icons[1], link: links[1], delay: delay[1] },
+  { icon: icons[2], link: links[2], delay: delay[2] },
+  { icon: icons[3], link: links[3], delay: delay[3] },
+  { icon: icons[4], link: links[4], delay: delay[4] },
+];
 
 function Course(code, name, link, bold) {
   this.code = code;
@@ -125,7 +137,7 @@ const Courses18 = [
     "Introduction to Microeconomics",
     "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-ECON.html#ECON101",
     false
-  )
+  ),
 ];
 
 const Courses19 = [
@@ -156,8 +168,8 @@ const Courses19 = [
   new Course(
     "CS 251",
     "Computer Organization and Design",
-    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-CS.html#CS251"
-    , true
+    "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-CS.html#CS251",
+    true
   ),
   new Course(
     "MATH 239",
@@ -188,12 +200,12 @@ const Courses19 = [
     "Physics, the Universe, and Everything",
     "http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-SCI.html#SCI207",
     false
-  )
+  ),
 ];
 
 export const Courses = [
   { year: 2019, arr: Courses19 },
-  { year: 2018, arr: Courses18 }
+  { year: 2018, arr: Courses18 },
 ];
 
 export const aboutMeText = [
@@ -206,7 +218,7 @@ export const aboutMeText = [
 
   `I am currently seeking an internship opportunity for the summer (May to August) of 2020 that involves Software Development or Deep Learning`,
 
-  `Languages | Frameworks | Tools that I am familar with:`
+  `Languages | Frameworks | Tools that I am familar with:`,
 ];
 
 export const projectInformation = [
@@ -217,7 +229,7 @@ export const projectInformation = [
     description: `Platformer game that was made using JFrame and Graphics2D for rendering and Thread based execution for updates.
                       Also utilizes sockets for a Java backend that accepts simple login and message packets`,
     link: "https://github.com/kevinli23/Pengus-Dank-Adventure",
-    icons: [faJava]
+    icons: [faJava],
   },
   {
     name: "Dark Run",
@@ -226,7 +238,7 @@ export const projectInformation = [
     description:
       "Puzzle Platformer made using Java and applies the core concepts of OOP. Uses a tile based mechanics for unit collision",
     link: "https://github.com/kevinli23/Dark-Run",
-    icons: [faJava]
+    icons: [faJava],
   },
   {
     name: "Chronovise",
@@ -235,7 +247,7 @@ export const projectInformation = [
     description:
       "Chrome Extension to help you manage access to websites seperated by four different workspaces",
     link: "https://github.com/kevinli23/Chronovise-1.0",
-    icons: [faHtml5, faCss3, faJs, faBootstrap, faChrome]
+    icons: [faHtml5, faCss3, faJs, faBootstrap, faChrome],
   },
   {
     name: "Portfolio Website",
@@ -244,7 +256,7 @@ export const projectInformation = [
     description:
       "A React based portfolio website that uses a mix of Material Design and creativity!",
     link: "https://github.com/kevinli23/me",
-    icons: [faReact, faCss3, faJs, faNode]
+    icons: [faReact, faCss3, faJs, faNode],
   },
   {
     name: "Hand Sign Ninjutsu Simulator",
@@ -254,6 +266,55 @@ export const projectInformation = [
       "Built at Hack the North 2019, where our team used handsign recognition and our voices to simulate ninjutsu from the anime Naruto in a one versus one AR battle",
     link:
       "https://devpost.com/software/ar-voice-control-and-ml-hand-sign-ninjutsu-battle-simulator",
-    icons: [faPython, faReact, faJs, faTensorflow]
-  }
+    icons: [faPython, faReact, faJs, faTensorflow],
+  },
+];
+
+export const WorkExperiences = [
+  {
+    date: "May 2020 - Aug 2020",
+    img: odaia,
+    link: "https://www.odaia.ai/",
+    title: "Software Engineer",
+    company: "Odaia Intelligence",
+    points: [
+      "Developed supporting scripts with Pandas and NumPy that created simulated test data (mimicking real data) for model creation, hyper tuning model parameters and exploration testing in a controlled environment",
+      "Researched and develop a regression model that helped better estimate aggregated volumes",
+      "Utilized various LSTM models (Stacked, Phased, Time) with Keras in order to develop models that were used to predict time sensitive information",
+    ],
+  },
+  {
+    date: "Sep 2019 - Dec 2019",
+    img: uw,
+    link: "https://uwaterloo.ca/math/",
+    title: "Teaching Assistant",
+    company: "University of Waterloo",
+    points: [
+      "A Teaching Assistant for the course Algebra for Honours Mathematics (MATH 135)",
+      "Graded and provided feedback to weekly math assignments"
+    ],
+  },
+  {
+    date: "May 2019 - Aug 2019",
+    img: intelex,
+    link: "https://www.intelex.com/",
+    title: "Software Developer",
+    company: "Intelex Technologies ULC",
+    points: [
+      "Assisted for design and architecture of framework for storing geography locations using C# and .NET",
+      "Designed and implemented proof of concept visualization of geography data using Google Maps API and JavaScript",
+      "Worked in two-week sprints with React, JavaScript, C# and SQL to fix urgent platform defects and refactor outdated code",
+    ],
+  },
+  {
+    date: "Jul 2018 - Aug 2018",
+    img: tdsb,
+    link: "https://www.tdsb.on.ca/",
+    title: "Robotics Mentor",
+    company: "Toronto District School Board",
+    points: [
+      "Planned and supervised team building activities to build leadership and teamwork among the campers.",
+      "Lead group discussions with coworkers from various groups in order to prepare competitive and inclusive activities."
+    ],
+  },
 ];
